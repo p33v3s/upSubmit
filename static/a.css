@@ -1,0 +1,119 @@
+*{
+box-sizing: border-box;
+}
+
+body {
+font-family: Arial, Helvetica, sans-serif;
+margin: 0;
+padding: 0;
+background-color: #e84118;
+}
+.column {
+float: left;
+width: 20%;
+padding: 10px;
+}
+.row {
+    /* margin: 5 -5 5 -5 px */
+    position: absolute;
+    margin-top: 5%;
+}
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+@media screen and (max-width: 600px) {
+.column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+}
+}
+.card {
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+padding: 16px;
+text-align: center;
+background-color: #f1f1f1;
+}
+ @import url('https://fonts.googleapis.com/css?family=Sarabun');
+
+ *,
+ *::after,
+ *::before {
+   margin: 0;
+   padding: 0;
+   box-sizing: inherit;
+ }
+ 
+ 
+ 
+ body {
+    text-align: center;
+   box-sizing: border-box;
+   background-color:   rgba(229,229,229, .3);
+   font-family: 'Sarabun', sans-serif;
+ }
+ 
+ .container {
+   width: 15rem;
+   height: 100%;
+   /* margin: 0 1rem; */
+   margin: auto;
+   position: relative;
+ }
+ 
+ h1 {
+   margin: 2rem;  
+ }
+ 
+ .searchbar {
+   font-size: 1rem;
+   width: 15rem;
+   height: 3rem;
+   border: none;
+   outline: none;
+   border-radius: 10rem;
+   box-shadow: 0 1rem 2rem rgba(black, .1);
+   padding: 2rem;
+   /* position: relative; */
+   transition: all .2s;
+   transition-delay: .1s;
+ }
+ 
+ .searchbar:hover {
+   width: 17rem;
+   height: 5rem;
+ }
+ 
+ .button {
+   height: 1.5rem;
+   position: absolute;
+   top: 1.5rem;
+   right: 1rem;
+   transition: all .2s;
+   transition-delay: .1s;
+ }
+ 
+ .button:hover {
+   cursor: pointer;
+ }
+ 
+ .searchbar:hover + .button {
+   height: 2.5rem;
+   top: 1.8rem;
+   right: 0;
+ }
+ 
+ .searchbar::placeholder {
+   opacity: .5;
+ }
+
+ #text_sent{
+     border-width:0px;
+    border:none;
+    background-color: #f1f1f1;
+    text-align: center;
+    font-weight: bold;
+    font-family: Helvetica, Arial;
+ }
